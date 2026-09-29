@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Smart Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sarabun:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top">
+      <h1>PIXEL SMART HOME</h1>
+      <p>ระบบบ้านอัจฉริยะจำลอง · ควบคุมอุปกรณ์อัตโนมัติจากเซ็นเซอร์ IoT (mock)</p>
+    </header>
+    <main class="layout">
+      <section class="stage">
+        <div class="screen">
+          <canvas id="house" aria-label="ภาพบ้านจำลองแบบพิกเซล"></canvas>
+        </div>
+        <p id="hover-info" class="hover-info"></p>
+        <div id="log" class="panel log-panel"></div>
+      </section>
+      <aside class="side">
+        <div id="sensors" class="panel"></div>
+        <div id="controls" class="panel"></div>
+        <div id="plates" class="panel"></div>
+      </aside>
+    </main>
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
